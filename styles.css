@@ -1,3 +1,64 @@
-p {
-    font-family: 'Libre Baskerville', 'Arial', 'Serif';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', 'Arial', 'Serif'; 
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* WRAPPER */
+
+#wrapper {
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+/* TITLE */
+
+#title {
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* MENU */
+
+#menu {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    display: inline;
+    /* border: 1px solid red;s */
+    margin: 0 5px 0 5px;
+}
+
+/* SOCIAL */
+
+#social {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#social a:link {color: black;}
+#social a:visited {color: black;}
+#social a:hover {color: grey;}
+#social a:active {color: white;} 
+
+#social ul {
+    list-style-type: none;
+}
+
+#social ul li {
+    font-size: 25px;
+    display: inline;
+    /* border: 1px solid red; */
+    margin: 0 5px 0 5px;
 }
