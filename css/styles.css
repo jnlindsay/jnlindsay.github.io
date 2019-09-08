@@ -9,16 +9,8 @@ div {
 }
 
 body {
-    background: lightgrey;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    background: #2E1529;
+    color: lightgrey;
 }
 
 /* CLASSES */
@@ -43,6 +35,21 @@ ul.inline-elements li {
     filter: invert(100%);
 }
 
+.music-box-link {
+    display: block;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    width: 150px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.music-box-link:hover {
+    color: #2E1529;
+    background-color: lightgrey;
+}
+
 /* mobile */
 @media only screen and (max-width: 768px) {
     .music-box {
@@ -50,7 +57,7 @@ ul.inline-elements li {
         padding: 0;
         margin-bottom: 30px;
         vertical-align: top;
-        border: 1px solid black;
+        border: 1px solid lightgrey;
     }
 
     .cover-art {
@@ -88,9 +95,6 @@ ul.inline-elements li {
     }
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
     .desktop {
         display: none;
@@ -119,7 +123,7 @@ ul.inline-elements li {
         width: 70%;
         margin: auto;
         margin-bottom: 20px;
-        background-color: lightgrey;
+        background-color: #2E1529;
     }
 }
 
@@ -129,7 +133,17 @@ ul.inline-elements li {
     margin: auto;
     width: 90%;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    font-size: 1.25em;
+}
+
+div#header ul li a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+div#header ul li a:hover {
+    color: darkgrey;
 }
 
 ul#header-ul-desktop li {
@@ -145,7 +159,7 @@ div#menu-mobile {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: lightgrey;
+    background-color: #2E1529;
     padding-top:100px;
     text-align: center;
     line-height: 35px;
