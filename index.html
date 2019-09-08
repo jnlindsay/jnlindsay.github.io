@@ -5,7 +5,7 @@
         <title>Jeremy Lindsay</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -15,11 +15,11 @@
     <script>
         $(document).ready(function(){
 
-            $("button#show-menu-mobile").click(function(){
+            $("#show-menu-mobile").click(function(){
                 $("div#menu-mobile").show();
             });
             
-            $("button#hide-menu-mobile").click(function(){
+            $("#hide-menu-mobile").click(function(){
                 $("div#menu-mobile").hide();
             });            
 
@@ -29,7 +29,6 @@
     <!-- END JQUERY -->
 
     <body>
-    <div id="wrapper">
 
         <!-- HEADER-->
         <div id="header" class="margin1">
@@ -58,7 +57,7 @@
                 
                 <!-- right: mobile -->
                 <span class="mobile float-right">
-                    <li><button id="show-menu-mobile">+</button></li>
+                    <li><i class="fa fa-bars" id="show-menu-mobile"></i></li>
                 </span>
                 
             </ul>
@@ -66,22 +65,23 @@
             <!-- mobile menu -->
             <div id="menu-mobile" class="mobile">
                 <ul class="no-bullets" id="menu-ul-mobile">
-                    <li><button id="hide-menu-mobile">-</button></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa fa-times" id="hide-menu-mobile"></i></li>
                     <li><a href="music.html">Music</a></li>
                     <li>About</li>
-                    <li>Contacts</li>
+                    <li>Contact</li>
                 </ul>
             </div>
 
         </div>
         <!-- END HEADER -->
 
-        <div class="margin1">
-            <p>This website is currently under construction.</p>
+        <br>
+        
+        <div id="inner">
+            <div>
+                <p>This website is currently under construction.</p>
+            </div>
         </div>
-
-    </div>
 
     </body>
 

@@ -5,7 +5,7 @@
         <title>Jeremy Lindsay</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -15,11 +15,11 @@
     <script>
         $(document).ready(function(){
 
-            $("button#show-menu-mobile").click(function(){
+            $("#show-menu-mobile").click(function(){
                 $("div#menu-mobile").show();
             });
             
-            $("button#hide-menu-mobile").click(function(){
+            $("#hide-menu-mobile").click(function(){
                 $("div#menu-mobile").hide();
             });            
 
@@ -29,9 +29,8 @@
     <!-- END JQUERY -->
 
     <body>
-    <div id="wrapper">
 
-        <!-- HEADER-->
+         <!-- HEADER-->
         <div id="header" class="margin1">
 
             <ul class="no-bullets inline-elements" id="header-ul-desktop">
@@ -58,7 +57,7 @@
                 
                 <!-- right: mobile -->
                 <span class="mobile float-right">
-                    <li><button id="show-menu-mobile">+</button></li>
+                    <li><i class="fa fa-bars" id="show-menu-mobile"></i></li>
                 </span>
                 
             </ul>
@@ -66,26 +65,105 @@
             <!-- mobile menu -->
             <div id="menu-mobile" class="mobile">
                 <ul class="no-bullets" id="menu-ul-mobile">
-                    <li><button id="hide-menu-mobile">-</button></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa fa-times" id="hide-menu-mobile"></i></li>
                     <li><a href="music.html">Music</a></li>
                     <li>About</li>
-                    <li>Contacts</li>
+                    <li>Contact</li>
                 </ul>
             </div>
 
         </div>
-        <!-- END HEADER -->           
+        <!-- END HEADER -->
 
-        <div id="music" class="margin1">
-            <h2>Music score downloads</h2><br>
-            <ul>
-                <li><a href="scores/chasing_elusive_v1.pdf" download>Chasing Elusive (v1)</a></li>                
-            </ul>
+        <div id="inner">
+                <span class="centered"><h1>Music</h1></span>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/chasing_elusive_cover.png">
+                    <div class="music-box-text">
+                        <h2>CHASING ELUSIVE</h2>
+                        <p>September 2019</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=e4c6EdQzZYM" target="_blank">YouTube</a>
+                        <br>
+                        <a href="scores/chasing_elusive_v1.pdf">Download score</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/wandering_too_far_cover.png">
+                    <div class="music-box-text">
+                        <h2>WANDERING TOO FAR</h2>
+                        <p>September 2018</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=8rTNZ6m8gtk" target="_blank">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/its_too_late_cover.png">
+                    <div class="music-box-text">
+                        <h2>IT'S TOO LATE</h2>
+                        <p>2018</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=hW_bcyq42l4" target="_blank">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/sketches_cover.png"">
+                    <div class="music-box-text">
+                        <h2>THIRTEEN SKETCHES</h2>
+                        <p>2017-2018</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=3w6VpCltoW0&list=PL3MY80cxU38DRyTW0yfCGuh79P3eH8Q4I" target="_blank">YouTube</a>
+                        <br>
+                        <a href="scores/thirteen_sketches.pdf">Download score</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/waltz_cover.png">
+                    <div class="music-box-text">
+                        <h2>WALTZ</h2>
+                        <p>2017</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=WXZFSwBXBlw" target="_blank">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/mirror_scene_cover.png">
+                    <div class="music-box-text">
+                        <h2>MIRROR SCENE</h2>
+                        <p>2017</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=wZB7aOw3yDY&t=9s" target="_blank">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/helium_cover.png">
+                    <div class="music-box-text">
+                        <h2>HELIUM</h2>
+                        <p>2017</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=Gr1saEK5BM0" target="_blank">YouTube</a>
+                    </div>
+                </div>       
+
+                <div class="music-box">
+                    <img class="cover-art hover-invert" src="img/the_wanderers_story_cover.png">
+                    <div class="music-box-text">
+                        <h2>THE WANDERER'S STORY</h2>
+                        <p>2016</p>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=-DXdpAZjt0E&list=PL3MY80cxU38BsI8DFxbwbVf7tcKIVw2hr" target="_blank">YouTube</a>
+                    </div>
+                </div>                 
+
         </div>
 
-    </div>
-
-</body>
+    </body>
 
 </html>

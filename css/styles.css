@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Libre Baskerville', 'Arial', 'Serif'; 
+    font-family: 'Mukta', 'Arial', 'Serif'; 
 }
 
 div {
-    border: 1px solid red;
-    /* margin: 10px;
-    padding: 10px; */
+    /* border: 1px solid red; */
+}
+
+body {
+    background: lightgrey;
 }
 
 a {
@@ -21,8 +23,8 @@ a:hover {
 
 /* CLASSES */
 
-.margin1 {
-    margin: 20px;
+.centered {
+    text-align: center;
 }
 
 .float-right {
@@ -37,6 +39,58 @@ ul.inline-elements li {
     display: inline;
 }
 
+.hover-invert:hover {
+    filter: invert(100%);
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .music-box {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        vertical-align: top;
+        border: 1px solid black;
+    }
+
+    .cover-art {
+        margin: auto;
+        width: 100%;
+        display: block; /* fixes silly bug with mystery img bottom margins */
+        max-width: 500px;
+    }
+
+    .music-box-text {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box; /* prevent overflow */
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 769px) {
+    .music-box {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .cover-art {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .music-box-text {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box; /* prevent overflow */
+    }
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
     .desktop {
         display: none;
@@ -49,35 +103,49 @@ ul.inline-elements li {
     }
 }
 
-/* WRAPPER */
+/* WRAPPERS */
 
-#wrapper {
-    border: 1px solid black;
-    margin: 20px;
+@media only screen and (max-width: 768px) {
+    #inner {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box; /* prevent overflow */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #inner {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+        background-color: lightgrey;
+    }
 }
 
 /* HEADER */
 
 #header {
+    margin: auto;
+    width: 90%;
     padding: 10px;
     border: 1px solid black;
 }
 
 ul#header-ul-desktop li {
-    /* border: 1px solid red; */
     margin: 0 5px 0 5px;
 }
 
 div#menu-mobile {
     display: none;
-    box-sizing:border-box; /* prevent overflow */
+    box-sizing: border-box; /* prevent overflow */
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: yellow;
+    background-color: lightgrey;
     padding-top:100px;
     text-align: center;
     line-height: 35px;
