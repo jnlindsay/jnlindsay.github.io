@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Jeremy Lindsay | Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <!-- JQUERY -->
+
+    <script>
+        $(document).ready(function(){
+
+            $("#show-menu-mobile").click(function(){
+                $("div#menu-mobile").show();
+            });
+            
+            $("#hide-menu-mobile").click(function(){
+                $("div#menu-mobile").hide();
+            });            
+
+        });
+    </script>
+
+    <!-- END JQUERY -->
+
+    <body>
+
+        <!-- HEADER-->
+        <div id="header" class="margin1">
+
+            <ul class="no-bullets inline-elements" id="header-ul-desktop">
+                <li id="jeremylindsay"><a href="index.html"><b>JEREMY LINDSAY</b></a></li>
+                
+                <span class="desktop">
+    
+                    <!-- left -->
+                    <li>::</li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <!-- right: desktop -->
+                    <span id="social" class="float-right">
+                        <li><a href="https://www.facebook.com/jnlindsaymusic/" target="_blank" ><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/jlindsaymusic/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC9QSUvSpxN0uU3-U0LlKvCw" target="_blank" ><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://jeremylindsay.bandcamp.com/" target="_blank" ><i class="fab fa-bandcamp"></i></a></li>
+                    </span>
+    
+                </span>
+                
+                <!-- right: mobile -->
+                <span class="mobile float-right">
+                    <li><i class="fa fa-bars" id="show-menu-mobile"></i></li>
+                </span>
+                
+            </ul>
+            
+            <!-- mobile menu -->
+            <div id="menu-mobile" class="mobile">
+                <ul class="no-bullets" id="menu-ul-mobile">
+                    <li><i class="fa fa-times" id="hide-menu-mobile"></i></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- END HEADER -->
+
+        <br>
+
+        <div id="inner">
+
+            <p><b>Email address</b>: jeremy@jeremylindsay.com</p>
+            <p><b>Phone (mobile)</b>: +61 0431 010 653</p>
+
+        </div>
+
+    </body>
+
+</html>
