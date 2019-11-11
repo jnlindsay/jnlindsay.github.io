@@ -1,2 +1,2 @@
-# jnlindsay.github.io
+# jeremylindsay.com
 Personal website
