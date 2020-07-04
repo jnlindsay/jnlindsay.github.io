@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, send_from_directory
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,3 +14,4 @@ def music():
 def contact():
     return render_template('contact.html')
 
+app.run(debug=True)

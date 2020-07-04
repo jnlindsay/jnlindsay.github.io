@@ -8,19 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $("#show-menu-mobile").click(function(){
-                $("div#menu-mobile").show();
-            });
-            
-            $("#hide-menu-mobile").click(function(){
-                $("div#menu-mobile").hide();
-            });            
-
-        });
-    </script>
+    <script src="{{ url_for('static', filename='mobile_menu.js') }}"></script>
 </head>
 
 <html>
