@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Jeremy Lindsay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#show-menu-mobile").click(function(){
+                $("div#menu-mobile").show();
+            });
+            
+            $("#hide-menu-mobile").click(function(){
+                $("div#menu-mobile").hide();
+            });            
+
+        });
+    </script>
+</head>
+
+<html>
+    <!-- HEADER-->
+    <div id="header" class="margin1">
+
+        <ul class="no-bullets inline-elements" id="header-ul-desktop">
+            <li id="jeremylindsay"><a href="/"><b>JEREMY LINDSAY</b></a></li>
+            
+            <span class="desktop">
+
+                <!-- left -->
+                <li>::</li>
+                <li><a href="music">Music</a></li>
+                <li>::</li>
+                <li><a href="contact">Contact</a></li>
+
+                <!-- right: desktop -->
+                <span id="social" class="float-right">
+                    <li><a href="https://www.facebook.com/jnlindsaymusic/" target="_blank" ><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/jlindsaymusic/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC9QSUvSpxN0uU3-U0LlKvCw" target="_blank" ><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://jeremylindsay.bandcamp.com/" target="_blank" ><i class="fab fa-bandcamp"></i></a></li>
+                </span>
+
+            </span>
+            
+            <!-- right: mobile -->
+            <span class="mobile float-right">
+                <li><i class="fa fa-bars" id="show-menu-mobile"></i></li>
+            </span>
+            
+        </ul>
+        
+        <!-- mobile menu -->
+        <div id="menu-mobile" class="mobile">
+            <ul class="no-bullets" id="menu-ul-mobile">
+                <li><i class="fa fa-times" id="hide-menu-mobile"></i></li>
+                <li><a href="music">Music</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- END HEADER -->
+
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+
+</html>
