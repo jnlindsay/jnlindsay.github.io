@@ -1,12 +1,135 @@
 {% extends 'base.html' %}
 
-{% block body%}
+{% block body %}
 
     <div id="inner">
+
         <br><br>
-        <span class="centered">
-            <h1>Hello and welcome to my quiet corner of the Internet.</h1>
-        </span>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/chasing_elusive_cover.png') }}">
+            <div class="music-box-text">
+                <h2>CHASING ELUSIVE</h2>
+                <p>September 2019</p>
+                <br>
+                <a class="music-box-link" href="https://www.youtube.com/watch?v=e4c6EdQzZYM" target="_blank">YouTube</a>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/chasing-elusive" target="_blank">Bandcamp</a>
+                <a class="music-box-link" href="static/scores/chasing_elusive_v1.pdf" target="_blank">Download score</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/wandering_too_far_cover.png') }}">
+            <div class="music-box-text">
+                <h2>WANDERING TOO FAR</h2>
+                <p>September 2018</p>
+                <br>
+                <a class="music-box-link" href="https://www.youtube.com/watch?v=8rTNZ6m8gtk" target="_blank">YouTube</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/its_too_late_cover.png') }}">
+            <div class="music-box-text">
+                <h2>IT'S TOO LATE</h2>
+                <p>2018</p>
+                <br>
+                <a class="music-box-link" href="https://www.youtube.com/watch?v=hW_bcyq42l4" target="_blank">YouTube</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/sketches_cover.png') }}">
+            <div class="music-box-text">
+                <h2>THIRTEEN SKETCHES</h2>
+                <p>2017-2018</p>
+                <br>
+                <a class="music-box-link" href="https://www.youtube.com/watch?v=3w6VpCltoW0&list=PL3MY80cxU38DRyTW0yfCGuh79P3eH8Q4I" target="_blank">YouTube</a>
+                <a class="music-box-link" href="static/scores/thirteen_sketches.pdf" target="_blank">Download score</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/waltz_cover.png') }}">
+            <div class="music-box-text">
+                <h2>WALTZ</h2>
+                <p>2017</p>
+                <br>
+                <a class="music-box-link" href="https://www.youtube.com/watch?v=WXZFSwBXBlw" target="_blank">YouTube</a>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/waltz" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/mirror_scene_cover.png') }}">
+            <div class="music-box-text">
+                <h2>MIRROR SCENE</h2>
+                <p>2017</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/mirror-scene" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/helium_cover.png') }}">
+            <div class="music-box-text">
+                <h2>HELIUM</h2>
+                <p>2017</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/helium" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/all_hope_is_lost_cover.png') }}">
+            <div class="music-box-text">
+                <h2>ALL HOPE IS LOST</h2>
+                <p>2017</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/all-hope-is-lost" target="_blank">Bandcamp</a>
+            </div>
+        </div>       
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/the_wanderers_story_cover.png') }}">
+            <div class="music-box-text">
+                <h2>THE WANDERER'S STORY</h2>
+                <p>2016</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/album/the-wanderers-story" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/a_dream_lost.png') }}">
+            <div class="music-box-text">
+                <h2>A DREAM LOST</h2>
+                <p>2015</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/a-dream-lost" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/a_new_kind_of_bliss_cover.png') }}">
+            <div class="music-box-text">
+                <h2>A NEW KIND OF BLISS</h2>
+                <p>2015</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/track/a-new-kind-of-bliss" target="_blank">Bandcamp</a>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <img class="cover-art hover-invert" src="{{ url_for('static', filename='img/miasma_cover.png') }}">
+            <div class="music-box-text">
+                <h2>MIASMA - EP</h2>
+                <p>2015</p>
+                <br>
+                <a class="music-box-link" href="https://jeremylindsay.bandcamp.com/album/miasma-ep" target="_blank">Bandcamp</a>
+            </div>
+        </div>                 
+
     </div>
-            
+
 {% endblock %}
