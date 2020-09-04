@@ -164,3 +164,13 @@ div#menu-mobile {
     text-align: center;
     line-height: 35px;
 }
+
+/* goodreads widget */
+
+a {
+    color: #d3d3d3;
+}
+
+a:hover {
+    color: #a9a9a9
+}
