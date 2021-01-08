@@ -51,7 +51,7 @@ ul.inline-elements li {
 }
 
 /* mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .music-box {
         margin: 0;
         padding: 0;
@@ -77,7 +77,7 @@ ul.inline-elements li {
 }
 
 /* desktop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
     .music-box {
         display: flex;
         margin-bottom: 20px;
@@ -95,13 +95,13 @@ ul.inline-elements li {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .desktop {
         display: none;
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
     .mobile {
         display: none;
     }
@@ -109,7 +109,7 @@ ul.inline-elements li {
 
 /* WRAPPERS */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #inner {
         width: 90%;
         margin: auto;
@@ -118,7 +118,7 @@ ul.inline-elements li {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 767px) {
     #inner {
         width: 70%;
         margin: auto;
