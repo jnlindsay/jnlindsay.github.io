@@ -1,0 +1,17 @@
+{% for box in site.data.music-boxes %}
+
+<div class="music-box">
+  <img class="cover-art" src="assets/img/{{ box.img-name }}">
+  <div class="music-box-text">
+      <h2>{{ box.title | upcase }}</h2>
+      <p>{{ box.date }}</p>
+        <br>
+      {% for link in box.links %}
+        <a class="music-box-link" href="{{ link.url }}" target="_blank">
+          {{ link.name }}
+        </a>
+      {% endfor %}
+  </div>
+</div>
+
+{% endfor %}
