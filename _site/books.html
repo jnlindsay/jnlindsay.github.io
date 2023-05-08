@@ -1,9 +1,80 @@
----
-layout: default
-title: Jeremy Lindsay | Books
----
+<!doctype html>
+<html>
 
-<div id="inner">
+    <head>
+        <title>Jeremy Lindsay | Books</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b80c9b94d4.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+      <nav>
+  <div id="header" class="margin1">
+
+    <ul class="no-bullets inline-elements" id="header-ul-desktop">
+        <li id="jeremylindsay"><a href="index.html"><b>JEREMY LINDSAY</b></a></li>
+        
+        <span class="desktop">
+
+            <!-- left -->
+            <li>::</li>
+            <li><a href="books.html">Books</a></li>
+            <li>::</li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <!-- right: desktop -->
+            <span id="social" class="float-right">
+                <!-- <li><a href="https://www.facebook.com/jnlindsaymusic/" target="_blank" ><i class="fab fa-facebook"></i></a></li> -->
+                <li><a href="https://www.instagram.com/jereremylindsay/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC9QSUvSpxN0uU3-U0LlKvCw" target="_blank" ><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://jeremylindsay.bandcamp.com/" target="_blank" ><i class="fab fa-bandcamp"></i></a></li>
+            </span>
+
+        </span>
+        
+        <!-- right: mobile -->
+        <span class="mobile float-right">
+            <li><i class="fa fa-bars" id="show-menu-mobile"></i></li>
+        </span>
+        
+    </ul>
+    
+    <!-- mobile menu -->
+    <div id="menu-mobile" class="mobile">
+        <ul class="no-bullets" id="menu-ul-mobile">
+            <li><i class="fa fa-times" id="hide-menu-mobile"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- JQUERY -->
+
+<script>
+  $(document).ready(function(){
+
+      $("#show-menu-mobile").click(function(){
+          $("div#menu-mobile").show();
+      });
+      
+      $("#hide-menu-mobile").click(function(){
+          $("div#menu-mobile").hide();
+      });            
+
+  });
+</script>
+
+<!-- END JQUERY -->
+      <br>
+      <div id="inner">
 
           <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
 <style type="text/css" media="screen">
@@ -305,3 +376,6 @@ title: Jeremy Lindsay | Books
       <script src="https://www.goodreads.com/review/custom_widget/25623974.Last%2010%20books%20I%20read?cover_position=left&cover_size=medium&num_books=10&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=0&show_tags=1&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=none&widget_id=1599218666&widget_text_color=000000&widget_title_size=large&widget_width=full" type="text/javascript" charset="utf-8"></script>
 
   </div>
+    </body>
+
+</html>
